@@ -6,7 +6,7 @@ A sample app demonstrating the problem that in play-2.1-rc2 Http.Context.current
 Usage
 ====
 
-Simply run the app then access [http://localhost:9000](http://localhost:9000), the following lines are the output from console indicating that Http.Context.current() is not accessible in an Akka actor.
+Simply run the app then access [http://localhost:9000](http://localhost:9000), the following lines are the output from console indicating that Http.Context.current() is accessible in an Action but is not accessible in an Akka actor.
 
 ```
 [debug] application - AccessHttpContextAction.call
