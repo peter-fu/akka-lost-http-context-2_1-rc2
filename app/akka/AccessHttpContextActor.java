@@ -14,6 +14,9 @@ public class AccessHttpContextActor extends UntypedActor {
 
         Logger.debug("  Try to access Context.curent()");
         System.out.println(Context.current());
+
+        // workaround below - assume arg0 is an instance of Http.Context
+        // Context.current.set((Context) arg0);
     }
 
 }
